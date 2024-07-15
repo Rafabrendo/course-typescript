@@ -20,8 +20,8 @@
 // console.log(account)
 
 
-import { CompanyAccount } from "./companyAccount"
-import { PeopleAccount } from "./peopleAccount"
+import { CompanyAccount } from "./class/companyAccount"
+import { PeopleAccount } from "./class/peopleAccount"
 
 
 const peopleAccount: PeopleAccount = new PeopleAccount(1, "Rafa", 10)
@@ -31,4 +31,8 @@ console.log(`Balance: ${peopleAccount.getBalance()}`)
 
 const companyAccount: CompanyAccount = new CompanyAccount("Dio", 20)
 console.log(companyAccount)
+companyAccount.deposit(10)
+companyAccount.getBalance()
+companyAccount.showDeposit()
+
 
