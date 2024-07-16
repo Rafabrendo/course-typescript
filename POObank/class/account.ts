@@ -3,12 +3,13 @@ export abstract class Account{
     private name: string
     private readonly accountNumber: number
     private balance: number
-    status: boolean = true
+    status: boolean 
 
-    constructor(name?: string, accountNumber?: number, balance?:number){
+    constructor(name?: string, accountNumber?: number, status?: boolean, balance?:number){
         this.name = name || "";
         this.accountNumber = accountNumber || 0;
         this.balance = 20
+        this.status = status || false;
     }
 
     getName = (): string => {
@@ -25,8 +26,8 @@ export abstract class Account{
         }
     }
 
-    withdraw = (): void => {
-        console.log('Você sacou')
+    withdraw = (x:number): number => {
+        return this.balance  -= x
     }
 
     getBalance = (): number => {

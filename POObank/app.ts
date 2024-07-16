@@ -24,12 +24,12 @@ import { CompanyAccount } from "./class/companyAccount"
 import { PeopleAccount } from "./class/peopleAccount"
 
 
-const peopleAccount: PeopleAccount = new PeopleAccount(1, "Rafa", 10)
+const peopleAccount: PeopleAccount = new PeopleAccount("Rafa", 10, true, 2)
 console.log(peopleAccount)
 peopleAccount.deposit(100)
 console.log(`Balance: ${peopleAccount.getBalance()}`)
 
-const companyAccount: CompanyAccount = new CompanyAccount("Dio", 20)
+const companyAccount: CompanyAccount = new CompanyAccount("Dio", 20, true)
 console.log(companyAccount)
 companyAccount.deposit(10)
 companyAccount.getBalance()
