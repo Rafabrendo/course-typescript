@@ -1,24 +1,31 @@
 import { Card } from "./components/Card";
+import { Layout } from "./components/layout";
 
 function App() {
   return (
-    <div>
-      <h1>World</h1>
-      <p>Paragrafo</p>
-      <div>
-        <h1>Card 1</h1>
-        <p>Paragrafo</p>
-      </div>
-      <div>
-        <h1>Card 2</h1>
-        <p>Paragrafo 2</p>
-      </div>
-      <div>
-        <h1>Card 3</h1>
-        <p>Paragrafo</p>
-      </div>
-      <Card />
-    </div>
+    // <React.Fragment>  -> Posso passar assim tbm. Ou posso usar apenas <>
+    <Layout>
+      <>
+        Hello World!
+        <Card
+          id={1}
+          paragraph="Olá mundo"
+          details="TS para front e backend"
+        />
+        <Card
+          id={2}
+          paragraph="Olá mundo"
+          details="TS para front e backend"
+        />
+        <Card
+          id={3}
+          paragraph="Olá mundo"
+          details="TS para front e backend"
+        />
+      
+      </>
+    </Layout>
+    // </React.Fragment> 
   );
 }
 
