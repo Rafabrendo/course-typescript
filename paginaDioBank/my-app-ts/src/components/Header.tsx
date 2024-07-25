@@ -1,5 +1,5 @@
 export const Header = () => {
-    return(
+    return (
         <div>
             Dio Bank
         </div>
