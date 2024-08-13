@@ -10,6 +10,7 @@ import {
 
 } from '@chakra-ui/react'
 import { PasswordInput } from './components/Password'
+import { login } from './services/login';
 
 
 // const Box = styled.div`
@@ -57,6 +58,9 @@ function App() {
             <Button colorScheme='teal' size='sm'>
               Button
             </Button>
+            <Center>
+              <Button onClick={login} colorScheme='teal' size='sm' width='100%' marginTop='5px'>Clique Aqui</Button>
+            </Center>
           </Box>
         </Box>
       </Center>
